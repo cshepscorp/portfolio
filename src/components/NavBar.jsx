@@ -12,114 +12,218 @@ function Navbar() {
   };
 
   return (
-    <div class="navbar bg-base-300">
-      <div class="navbar-start">
-        {/* <div class="dropdown">
-          <label class="btn btn-ghost lg:hidden">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              class="h-5 w-5"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h8m-8 6h16"
-              />
-            </svg>
-          </label>
-          <ul
-            tabindex="0"
-            class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-          >
-            <li>
-              <a>Item 1</a>
-            </li>
-            <li tabindex="0">
-              <a class="justify-between">
-                Parent
-                <svg
-                  class="fill-current"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
+    <>
+      <div className="min-h-full">
+        <nav className="bg-gray-800">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex items-center justify-between h-16">
+              <div className="flex items-center">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-8 w-8"
+                    src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
+                    alt="Workflow"
+                  />
+                </div>
+                <div className="hidden md:block">
+                  <div className="ml-10 flex items-baseline space-x-4">
+                    {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+                    <a
+                      href="#"
+                      className="hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      aria-current="page"
+                    >
+                      Dashboard
+                    </a>
+
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Team
+                    </a>
+
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Projects
+                    </a>
+
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Calendar
+                    </a>
+
+                    <a
+                      href="#"
+                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    >
+                      Reports
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div className="hidden md:block">
+                <div className="ml-4 flex items-center md:ml-6">
+                  <button
+                    type="button"
+                    className="bg-gray-800 p-1 rounded-full text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  >
+                    <span className="sr-only">View notifications</span>
+                    {/* <!-- Heroicon name: outline/bell --> */}
+                    <svg
+                      className="h-6 w-6"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
+                      />
+                    </svg>
+                  </button>
+                </div>
+              </div>
+              <div className="-mr-2 flex md:hidden">
+                {/* <!-- Mobile menu button --> */}
+                <button
+                  type="button"
+                  className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+                  aria-controls="mobile-menu"
+                  aria-expanded="false"
                 >
-                  <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
-                </svg>
+                  <span className="sr-only">Open main menu</span>
+                  {/* <!--
+              Heroicon name: outline/menu
+
+              Menu open: "hidden", Menu closed: "block"
+            --> */}
+                  <svg
+                    className="block h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                  {/* <!--
+              Heroicon name: outline/x
+
+              Menu open: "block", Menu closed: "hidden"
+            --> */}
+                  <svg
+                    className="hidden h-6 w-6"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          {/* <!-- Mobile menu, show/hide based on menu state. --> */}
+          <div className="md:hidden" id="mobile-menu">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+              {/* <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" --> */}
+              <a
+                href="#"
+                className="bg-gray-900 text-white block px-3 py-2 rounded-md text-base font-medium"
+                aria-current="page"
+              >
+                Dashboard
               </a>
-              <ul class="p-2">
-                <li>
-                  <a>Submenu 1</a>
-                </li>
-                <li>
-                  <a>Submenu 2</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a>Item 3</a>
-            </li>
-          </ul>
-        </div> */}
-        <Link to="/" className="btn btn-ghost normal-case text-xl">
-          Christy Sheppard
-        </Link>
+
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Team
+              </a>
+
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Projects
+              </a>
+
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Calendar
+              </a>
+
+              <a
+                href="#"
+                className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              >
+                Reports
+              </a>
+            </div>
+            <div className="pt-4 pb-3 border-t border-gray-700">
+              <div className="flex items-center px-5">
+                <div className="flex-shrink-0">
+                  <img
+                    className="h-10 w-10 rounded-full"
+                    src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                    alt=""
+                  />
+                </div>
+                <div className="ml-3">
+                  <div className="text-base font-medium leading-none text-white">
+                    Tom Cook
+                  </div>
+                  <div className="text-sm font-medium leading-none text-gray-400">
+                    tom@example.com
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+
+        <header className="bg-white shadow">
+          <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+            <h1 className="text-3xl font-bold text-gray-900">Dashboard</h1>
+          </div>
+        </header>
+        <main>
+          <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+            {/* <!-- Replace with your content --> */}
+            <div className="px-4 py-6 sm:px-0">
+              <div className="border-4 border-dashed border-gray-200 rounded-lg h-96"></div>
+            </div>
+            {/* <!-- /End replace --> */}
+          </div>
+        </main>
       </div>
-      {/* <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">
-          <li>
-            <Link
-              to="/about"
-              className={
-                pathMatchRoute('/about')
-                  ? 'btn btn-ghost navbarListItemNameActive'
-                  : 'btn btn-ghost navbarListItemName'
-              }
-            >
-              About
-            </Link>
-          </li>
-          <li>
-            <Link
-              to="/portfolio"
-              className={
-                pathMatchRoute('/portfolio')
-                  ? 'btn btn-ghost navbarListItemNameActive'
-                  : 'btn btn-ghost navbarListItemName'
-              }
-            >
-              Portfolio
-            </Link>
-          </li>
-        </ul>
-      </div> */}
-      <div class="navbar-end">
-        <Link
-          to="/portfolio"
-          className={
-            pathMatchRoute('/portfolio')
-              ? 'btn btn-ghost navbarListItemNameActive'
-              : 'btn btn-ghost navbarListItemName'
-          }
-        >
-          Portfolio
-        </Link>
-        <Link
-          to="/contact"
-          className={
-            pathMatchRoute('/contact')
-              ? 'btn btn-ghost navbarListItemNameActive'
-              : 'btn btn-ghost navbarListItemName'
-          }
-        >
-          Contact
-        </Link>
-      </div>
-    </div>
+    </>
   );
 }
 
