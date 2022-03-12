@@ -8,7 +8,7 @@ function Portfolio() {
 
   return (
     <>
-      <div className="grid grid-calls-1 gap-20 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2">
+      <div className="grid grid-calls-1 gap-20 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 mt-8">
         <AnimatePresence>
           {/* <!-- cards to display projects --> */}
           {projectsList.map((project) => (

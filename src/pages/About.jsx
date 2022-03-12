@@ -1,6 +1,6 @@
 function About() {
   return (
-    <>
+    <div className="mt-4">
       <div>
         <h1 className="text-6xl mb-4">Hi, I'm Christy!</h1>
       </div>
@@ -22,7 +22,7 @@ function About() {
           - I get excited - and then I get to work!
         </p>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -14,7 +14,7 @@ function Navbar() {
   return (
     <div class="navbar bg-base-300">
       <div class="navbar-start">
-        <div class="dropdown">
+        {/* <div class="dropdown">
           <label class="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -64,10 +64,12 @@ function Navbar() {
               <a>Item 3</a>
             </li>
           </ul>
-        </div>
-        <Link to="/" className="btn btn-ghost normal-case text-xl">Christy Sheppard</Link>
+        </div> */}
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          Christy Sheppard
+        </Link>
       </div>
-      <div class="navbar-center hidden lg:flex">
+      {/* <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
           <li>
             <Link
@@ -94,9 +96,26 @@ function Navbar() {
             </Link>
           </li>
         </ul>
-      </div>
+      </div> */}
       <div class="navbar-end">
-        <Link to="/contact" className="btn btn-primary">
+        <Link
+          to="/portfolio"
+          className={
+            pathMatchRoute('/portfolio')
+              ? 'btn btn-ghost navbarListItemNameActive'
+              : 'btn btn-ghost navbarListItemName'
+          }
+        >
+          Portfolio
+        </Link>
+        <Link
+          to="/contact"
+          className={
+            pathMatchRoute('/contact')
+              ? 'btn btn-ghost navbarListItemNameActive'
+              : 'btn btn-ghost navbarListItemName'
+          }
+        >
           Contact
         </Link>
       </div>

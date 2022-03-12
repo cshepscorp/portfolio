@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 function Contact() {
   return (
     <>
-      <div>
+      <div className="mt-4">
         <h1 className="text-6xl mb-4">Contact Me</h1>
       </div>
       <div class="avatar">
