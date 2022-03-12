@@ -1,9 +1,12 @@
 import Box from '@mui/material/Box';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import CssBaseline from '@mui/material/CssBaseline';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
 import RestoreIcon from '@mui/icons-material/Restore';
+import HomeIcon from '@mui/icons-material/Home';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import ArchiveIcon from '@mui/icons-material/Archive';
 import WorkIcon from '@mui/icons-material/Work';
@@ -16,6 +19,8 @@ import Avatar from '@mui/material/Avatar';
 
 function FixedBottomNavigation() {
   const [value, setValue] = useState(0);
+  const navigate = useNavigate();
+
   return (
     <>
       <CssBaseline />
@@ -30,9 +35,21 @@ function FixedBottomNavigation() {
             setValue(newValue);
           }}
         >
-          <BottomNavigationAction label="Projects" icon={<WorkIcon />} />
-          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+          <BottomNavigationAction
+            label="Projects"
+            icon={<WorkIcon />}
+            onClick={() => navigate('/portfolio')}
+          />
+          <BottomNavigationAction
+            label="Home"
+            icon={<HomeIcon />}
+            onClick={() => navigate('/')}
+          />
+          <BottomNavigationAction
+            label="Contact"
+            icon={<ContactPageIcon />}
+            onClick={() => navigate('/contact')}
+          />
         </BottomNavigation>
       </Paper>
     </>
