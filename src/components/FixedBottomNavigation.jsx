@@ -17,22 +17,25 @@ import Avatar from '@mui/material/Avatar';
 function FixedBottomNavigation() {
   const [value, setValue] = useState(0);
   return (
-    <Paper
-      sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
-      elevation={3}
-    >
-      <BottomNavigation
-        showLabels
-        value={value}
-        onChange={(event, newValue) => {
-          setValue(newValue);
-        }}
+    <>
+      <CssBaseline />
+      <Paper
+        sx={{ position: 'fixed', bottom: 0, left: 0, right: 0 }}
+        elevation={3}
       >
-        <BottomNavigationAction label="Projects" icon={<WorkIcon />} />
-        <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
-        <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
-      </BottomNavigation>
-    </Paper>
+        <BottomNavigation
+          showLabels
+          value={value}
+          onChange={(event, newValue) => {
+            setValue(newValue);
+          }}
+        >
+          <BottomNavigationAction label="Projects" icon={<WorkIcon />} />
+          <BottomNavigationAction label="Favorites" icon={<FavoriteIcon />} />
+          <BottomNavigationAction label="Archive" icon={<ArchiveIcon />} />
+        </BottomNavigation>
+      </Paper>
+    </>
   );
 }
 
