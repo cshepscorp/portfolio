@@ -11,7 +11,7 @@ import Contact from './pages/Contact';
 
 function App() {
   return (
-    <div className="flex flex-col h-screen">
+
       <Router>
         <NavBar />
         <main className="container mx-auto px-3 pb-12">
@@ -23,7 +23,7 @@ function App() {
           </Routes>
         </main>
       </Router>
-    </div>
+
   );
 }
 
