@@ -7,10 +7,9 @@ function Contact() {
   return (
     <>
       <div>
-        <h3>Contact Me</h3>
+        <h1 className="text-6xl mb-4">Contact Me</h1>
       </div>
       <div>
-          
         <Link to="mailto:sheppard.christy@gmail.com">
           <EmailIcon /> sheppard dot christy [at] gmail
         </Link>
