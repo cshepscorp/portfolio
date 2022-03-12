@@ -65,7 +65,9 @@ function Navbar() {
             </li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl">Christy Sheppard</a>
+        <Link to="/" className="btn btn-ghost normal-case text-xl">
+          Christy Sheppard
+        </Link>
       </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal p-0">
