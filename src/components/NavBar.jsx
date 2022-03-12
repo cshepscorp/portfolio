@@ -1,8 +1,12 @@
 import { useNavigate, useLocation } from 'react-router-dom';
+import { useState } from 'react';
+import { Transition } from '@headlessui/react';
 import { FaHome } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
   const navigate = useNavigate();
   const location = useLocation();
   const pathMatchRoute = (route) => {
@@ -83,9 +87,9 @@ function Navbar() {
                       aria-hidden="true"
                     >
                       <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
                         d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"
                       />
                     </svg>
@@ -95,6 +99,7 @@ function Navbar() {
               <div className="-mr-2 flex md:hidden">
                 {/* <!-- Mobile menu button --> */}
                 <button
+                  onClick={() => setIsOpen(!isOpen)}
                   type="button"
                   className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                   aria-controls="mobile-menu"
@@ -115,9 +120,9 @@ function Navbar() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M4 6h16M4 12h16M4 18h16"
                     />
                   </svg>
@@ -135,9 +140,9 @@ function Navbar() {
                     aria-hidden="true"
                   >
                     <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M6 18L18 6M6 6l12 12"
                     />
                   </svg>
