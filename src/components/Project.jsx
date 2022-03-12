@@ -1,41 +1,28 @@
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
+import { FaExternalLinkSquareAlt, FaGithubAlt } from 'react-icons/fa';
 
 function Project(props) {
   return (
     <>
-      <Card sx={{ maxWidth: 345 }}>
-        <CardMedia
-          component="img"
-          alt={props.name}
-          height="140"
-          src={props.image}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            {props.name}
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            {props.description}
-          </Typography>
-
-          <Typography variant="body2" color="text.secondary">
-            Tech Used: {props.tech}
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button href={props.appLink} size="small">
-            Deployed App
-          </Button>
-          <Button href={props.gitHubLink} size="small">
-            GitHub Repo
-          </Button>
-        </CardActions>
-      </Card>
+      <div class="card w-96 glass card-normal bg-base-100 shadow-xl">
+        <figure>
+          <img src={props.image} alt={props.name} />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">{props.name}</h2>
+          <p>{props.description}</p>
+          <p>
+            <strong>Tech Used:</strong> {props.tech}
+          </p>
+          <div class="btn-group justify-end pt-2">
+            <button class="btn btn-sm" href={props.gitHubLink}>
+              GitHub Repo <FaGithubAlt />
+            </button>
+            <button class="btn btn-sm btn-active" href={props.appLink}>
+              Deployed App <FaExternalLinkSquareAlt />
+            </button>
+          </div>
+        </div>
+      </div>
     </>
   );
 }

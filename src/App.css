@@ -17,6 +17,17 @@
   }
 }
 
+.navbarListItemName,
+.navbarListItemNameActive {
+  margin-top: 0.25rem;
+  font-size: 14px;
+  font-weight: 600;
+  color: #8f8f8f;
+}
+.navbarListItemNameActive {
+  color: #a5e844;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
