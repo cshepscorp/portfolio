@@ -1,5 +1,5 @@
 import { FaExternalLinkSquareAlt, FaGithubAlt } from 'react-icons/fa';
-
+import { Link } from 'react-router-dom';
 function Project(props) {
   return (
     <>
@@ -14,12 +14,20 @@ function Project(props) {
             <strong>Tech Used:</strong> {props.tech}
           </p>
           <div class="btn-group justify-end pt-2">
-            <button class="btn btn-sm" href={props.gitHubLink}>
-              GitHub Repo <FaGithubAlt />
-            </button>
-            <button class="btn btn-sm btn-active" href={props.appLink}>
+            <a
+              class="btn btn-sm btn"
+              href={props.gitHubLink}
+              target="_blank"
+            >
+              <Link to="{props.appLink}">Link</Link>GitHub Repo <FaGithubAlt />
+            </a>
+            <a
+              class="btn btn-sm btn-active"
+              href={props.appLink}
+              target="_blank"
+            >
               Deployed App <FaExternalLinkSquareAlt />
-            </button>
+            </a>
           </div>
         </div>
       </div>

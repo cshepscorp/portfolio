@@ -49,7 +49,7 @@
     "name": "Portfolio (old)",
     "description": "Professional portfolio built using basic web staples.",
     "tech": "HTML, CSS",
-    "appLink": "https://cshepscorp.github.io/portfolio/",
+    "appLink": "https://cshepscorp.github.io/portfolio-html/",
     "gitHubLink": "https://github.com/cshepscorp/portfolio",
     "image": "https://github.com/cshepscorp/react-portfolio/blob/main/public/images/port-old.jpg?raw=true"
   }

@@ -32,7 +32,7 @@ function Navbar() {
                   alt="Workflow"
                 /> */}
               </div>
-              <div className="hidden md:block">
+              <div className="hidden md:block absolute inset-y-0 right-0 flex items-center pr-2">
                 <div className="ml-10 flex items-baseline space-x-4">
                   {/* <a
                     href="#"
