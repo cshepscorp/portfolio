@@ -41,8 +41,8 @@ function Navbar() {
                     Home
                   </a> */}
 
-                  <a
-                    href="/about"
+                  <Link
+                    to="/about"
                     className={
                       pathMatchRoute('/about')
                         ? 'btn btn-ghost navbarListItemNameActive'
@@ -50,10 +50,10 @@ function Navbar() {
                     }
                   >
                     About
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/portfolio"
+                  <Link
+                    to="/portfolio"
                     className={
                       pathMatchRoute('/portfolio')
                         ? 'btn btn-ghost navbarListItemNameActive'
@@ -61,10 +61,10 @@ function Navbar() {
                     }
                   >
                     Portfolio
-                  </a>
+                  </Link>
 
-                  <a
-                    href="/contact"
+                  <Link
+                    to="/contact"
                     className={
                       pathMatchRoute('/contact')
                         ? 'btn btn-ghost navbarListItemNameActive'
@@ -72,7 +72,7 @@ function Navbar() {
                     }
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

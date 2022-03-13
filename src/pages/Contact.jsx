@@ -20,19 +20,19 @@ function Contact() {
         <div>
           <ul>
             <li>
-              <Link to="mailto:sheppard.christy@gmail.com">
+              <a href="mailto:sheppard.christy@gmail.com">
                 <EmailIcon /> sheppard dot christy [at] gmail
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="tel:18049281876">
+              <a href="tel:18049281876">
                 <PhoneIphoneIcon /> 804-928-1876
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="https://github.com/cshepscorp">
+              <a href="https://github.com/cshepscorp" target="_blank">
                 <GitHubIcon /> github.com/cshepscorp
-              </Link>
+              </a>
             </li>
           </ul>
         </div>
