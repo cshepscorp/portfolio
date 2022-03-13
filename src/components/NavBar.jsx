@@ -138,6 +138,7 @@ function Navbar() {
                 <Link
                   to="/about"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   About Me
                 </Link>
@@ -145,6 +146,7 @@ function Navbar() {
                 <Link
                   to="/portfolio"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Portfolio
                 </Link>
@@ -152,6 +154,7 @@ function Navbar() {
                 <Link
                   to="/contact"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                  onClick={() => setIsOpen(!isOpen)}
                 >
                   Contact
                 </Link>
