@@ -19,70 +19,62 @@ function Navbar() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center">
-              {/* <div className="flex-shrink-0">
+              <div className="flex-shrink-0">
                 <img
                   className="h-8 w-8"
                   src="https://tailwindui.com/img/logos/workflow-mark-indigo-500.svg"
                   alt="Workflow"
                 />
-              </div> */}
+              </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  <Link
-                    to="/"
-                    className={
-                      pathMatchRoute('/')
-                        ? 'btn btn-ghost navbarListItemNameActive'
-                        : 'btn btn-ghost navbarListItemName'
-                    }
+                  <a
+                    href="#"
+                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Home
-                  </Link>
-                  <Link
-                    to="/about"
-                    className={
-                      pathMatchRoute('/about')
-                        ? 'btn btn-ghost navbarListItemNameActive'
-                        : 'btn btn-ghost navbarListItemName'
-                    }
-                  >
-                    About
-                  </Link>
+                    Dashboard
+                  </a>
 
-                  <Link
-                    to="/portfolio"
-                    className={
-                      pathMatchRoute('/portfolio')
-                        ? 'btn btn-ghost navbarListItemNameActive'
-                        : 'btn btn-ghost navbarListItemName'
-                    }
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Portfolio
-                  </Link>
+                    Team
+                  </a>
 
-                  <Link
-                    to="/contact"
-                    className={
-                      pathMatchRoute('/contact')
-                        ? 'btn btn-ghost navbarListItemNameActive'
-                        : 'btn btn-ghost navbarListItemName'
-                    }
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Contact
-                  </Link>
+                    Projects
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Calendar
+                  </a>
+
+                  <a
+                    href="#"
+                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                  >
+                    Reports
+                  </a>
                 </div>
               </div>
             </div>
             <div className="-mr-2 flex md:hidden">
               <button
-                onClick={() => setNavOpen(!navOpen)}
+                onClick={() => setIsOpen(!isOpen)}
                 type="button"
                 className="bg-gray-900 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
                 aria-controls="mobile-menu"
                 aria-expanded="false"
               >
                 <span className="sr-only">Open main menu</span>
-                {!navOpen ? (
+                {!isOpen ? (
                   <svg
                     className="block h-6 w-6"
                     xmlns="http://www.w3.org/2000/svg"
@@ -121,7 +113,7 @@ function Navbar() {
         </div>
 
         <Transition
-          show={navOpen}
+          show={isOpen}
           enter="transition ease-out duration-100 transform"
           enterFrom="opacity-0 scale-95"
           enterTo="opacity-100 scale-100"
@@ -132,26 +124,40 @@ function Navbar() {
           {(ref) => (
             <div className="md:hidden" id="mobile-menu">
               <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                <Link
-                  to="/about"
+                <a
+                  href="#"
                   className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  About
-                </Link>
+                  Dashboard
+                </a>
 
-                <Link
-                  href="/portfolio"
+                <a
+                  href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Portfolio
-                </Link>
+                  Team
+                </a>
 
-                <Link
-                  href="/contact"
+                <a
+                  href="#"
                   className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
                 >
-                  Contact
-                </Link>
+                  Projects
+                </a>
+
+                <a
+                  href="#"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Calendar
+                </a>
+
+                <a
+                  href="#"
+                  className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+                >
+                  Reports
+                </a>
               </div>
             </div>
           )}
