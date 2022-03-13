@@ -1,6 +1,10 @@
-import EmailIcon from '@mui/icons-material/Email';
-import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import {
+  FaGithub,
+  FaEnvelope,
+  FaPhone,
+  FaDownload,
+  FaLinkedin,
+} from 'react-icons/fa';
 
 function Contact() {
   return (
@@ -16,26 +20,97 @@ function Contact() {
             <img src="https://raw.githubusercontent.com/cshepscorp/react-portfolio/main/public/images/hero-headshot-vinyls.png" />
           </div>
         </div>
-        <div>
-          <ul>
-            <li>
-              <a href="mailto:sheppard.christy@gmail.com">
-                <EmailIcon /> sheppard dot christy [at] gmail
+        <div class="stats shadow contact">
+          <div class="stat place-items-center">
+            <div class="stat-title">Resume</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="https://raw.githubusercontent.com/cshepscorp/react-portfolio/main/public/Resume-Christy-Sheppard.pdf">
+                <FaDownload />
               </a>
-            </li>
-            <li>
-              <a href="tel:18049281876">
-                <PhoneIphoneIcon /> 804-928-1876
-              </a>
-            </li>
-            <li>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Github</div>
+            <div class="stat-value text-secondary pt-2">
               <a href="https://github.com/cshepscorp" target="_blank">
-                <GitHubIcon /> github.com/cshepscorp
+                <FaGithub />
               </a>
-            </li>
-          </ul>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">LinkedIn</div>
+            <div class="stat-value text-secondary pt-2">
+              <a
+                href="https://www.linkedin.com/in/christinasheppard/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Email</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="mailto:sheppard.christy@gmail.com">
+                <FaEnvelope />
+              </a>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Phone</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="tel:18049281876">
+                <FaPhone />
+              </a>
+            </div>
+          </div>
         </div>
-      </div>{' '}
+        <div class="stats stats-vertical shadow mobile-contact">
+          <div class="stat place-items-center">
+            <div class="stat-title">Resume</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="https://raw.githubusercontent.com/cshepscorp/react-portfolio/main/public/Resume-Christy-Sheppard.pdf">
+                <FaDownload />
+              </a>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Github</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="https://github.com/cshepscorp" target="_blank">
+                <FaGithub />
+              </a>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">LinkedIn</div>
+            <div class="stat-value text-secondary pt-2">
+              <a
+                href="https://www.linkedin.com/in/christinasheppard/"
+                target="_blank"
+              >
+                <FaLinkedin />
+              </a>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Email</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="mailto:sheppard.christy@gmail.com">
+                <FaEnvelope />
+              </a>
+            </div>
+          </div>
+          <div class="stat place-items-center">
+            <div class="stat-title">Phone</div>
+            <div class="stat-value text-secondary pt-2">
+              <a href="tel:18049281876">
+                <FaPhone />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

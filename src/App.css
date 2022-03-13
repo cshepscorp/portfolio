@@ -22,3 +22,16 @@
   color: rebeccapurple;
   padding: 0 10px;
 }
+
+.mobile-contact {
+  display: none;
+}
+
+@media (max-width: 660px) {
+  .mobile-contact {
+    display: block;
+  }
+  .contact {
+    display: none;
+  }
+}

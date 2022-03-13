@@ -1,4 +1,4 @@
-import { FaGithub, FaEnvelope, FaPhone } from 'react-icons/fa';
+import { FaGithub, FaEnvelope, FaPhone, FaLinkedin } from 'react-icons/fa';
 
 function AboutIconLink() {
   return (
@@ -11,11 +11,22 @@ function AboutIconLink() {
       >
         <FaGithub size={30} />
       </a>
-      <a className="bottom-link" href="mailto:sheppard.christy@gmail.com">
+      <a
+        className="bottom-link"
+        href="mailto:sheppard.christy@gmail.com"
+        target="_blank"
+      >
         <FaEnvelope size={30} />
       </a>
       <a className="bottom-link" href="tel:18049281876">
         <FaPhone size={30} />
+      </a>
+      <a
+        className="bottom-link"
+        href="https://www.linkedin.com/in/christinasheppard/"
+        target="_blank"
+      >
+        <FaLinkedin size={30} />
       </a>
     </div>
   );

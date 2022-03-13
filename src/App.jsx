@@ -1,9 +1,5 @@
 import './App.css';
-import GitHubIcon from '@mui/icons-material/GitHub';
-
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-//import blue from '@mui/material/colors/blue';
 import NavBar from './components/NavBar';
 import About from './pages/About';
 import Portfolio from './pages/Portfolio';
