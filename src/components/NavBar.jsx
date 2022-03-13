@@ -24,7 +24,7 @@ function Navbar() {
                   to="/"
                   className="pt-1 text-white px-3 rounded-md btn btn-ghost text-xl"
                 >
-                  CRS
+                  Christy Sheppard
                 </Link>
                 {/* <img
                   className="h-8 w-8"
