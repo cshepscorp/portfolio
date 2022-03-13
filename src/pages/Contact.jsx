@@ -1,7 +1,6 @@
 import EmailIcon from '@mui/icons-material/Email';
 import PhoneIphoneIcon from '@mui/icons-material/PhoneIphone';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { Link } from 'react-router-dom';
 
 function Contact() {
   return (
