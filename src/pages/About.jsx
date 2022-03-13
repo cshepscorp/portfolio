@@ -20,7 +20,7 @@ function About() {
             <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
               Hi. I'm Christy!
             </h2>
-            <p className="mt-8 text-gray-500">
+            <p className="mt-8 text-gray-500 z-50">
               I am an aspiring Full Stack Web Developer utilizing over a decade
               of experience with Adobe Creative Suite and website management
               skills to craft and design attractive and intuitive user
