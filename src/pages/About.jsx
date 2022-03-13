@@ -1,3 +1,5 @@
+import { FaGithub } from 'react-icons/fa';
+
 function About() {
   return (
     // <!-- This example requires Tailwind CSS v2.0+ -->
@@ -31,7 +33,6 @@ function About() {
               tasked with a project I'm not 100% sure how to complete - I get
               excited - and then I get to work!
             </p>
-
             <h3 className="mt-10 text-lg leading-3 font-bold text-gray-900 sm:text-4xl">
               Technical Skills
             </h3>
