@@ -17,14 +17,14 @@ function Navbar() {
     <div>
       <nav className="bg-gray-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex items-center justify-between h-16">
+          <div className="flex justify-between items-center h-16">
             <div className="flex items-center">
-              <div className="flex-shrink-0">
+              <div className="flex-shrink-0 flex justify-start">
                 <Link
                   to="/"
-                  className="text-white px-3 rounded-md btn btn-ghost text-large"
+                  className="pt-1 text-white px-3 rounded-md btn btn-ghost text-xl"
                 >
-                  Christy Sheppard
+                  CRS
                 </Link>
                 {/* <img
                   className="h-8 w-8"
@@ -32,15 +32,8 @@ function Navbar() {
                   alt="Workflow"
                 /> */}
               </div>
-              <div className="hidden md:block inset-y-0 right-0 flex pr-2 flex-end">
-                <div className="ml-10 flex items-baseline space-x-4">
-                  {/* <a
-                    href="#"
-                    className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
-                  >
-                    Home
-                  </a> */}
-
+              <div className="hidden md:block pr-2 flex justify-end">
+                <div className="ml-10 flex flex-end space-x-4">
                   <Link
                     to="/about"
                     className={
