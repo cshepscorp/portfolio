@@ -28,30 +28,42 @@ function Navbar() {
               </div>
               <div className="hidden md:block">
                 <div className="ml-10 flex items-baseline space-x-4">
-                  {/* <a
+                  <a
                     href="#"
                     className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                   >
-                    Dashboard
-                  </a> */}
+                    Home
+                  </a>
 
                   <a
                     href="/about"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className={
+                      pathMatchRoute('/about')
+                        ? 'btn btn-ghost navbarListItemNameActive'
+                        : 'btn btn-ghost navbarListItemName'
+                    }
                   >
                     About
                   </a>
 
                   <a
                     href="/portfolio"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className={
+                      pathMatchRoute('/portfolio')
+                        ? 'btn btn-ghost navbarListItemNameActive'
+                        : 'btn btn-ghost navbarListItemName'
+                    }
                   >
                     Portfolio
                   </a>
 
                   <a
                     href="/contact"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                    className={
+                      pathMatchRoute('/contact')
+                        ? 'btn btn-ghost navbarListItemNameActive'
+                        : 'btn btn-ghost navbarListItemName'
+                    }
                   >
                     Contact
                   </a>
