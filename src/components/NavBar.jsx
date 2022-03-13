@@ -3,7 +3,7 @@ import { Transition } from '@headlessui/react';
 import { Link, useNavigate, useLocation } from 'react-router-dom';
 
 function Navbar() {
-  const [navOpen, setNavOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
