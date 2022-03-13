@@ -8,6 +8,10 @@ function Portfolio() {
 
   return (
     <>
+      {' '}
+      <div>
+        <h1 className="text-6xl mb-4 mt-8">Portfolio</h1>
+      </div>
       <div className="grid grid-calls-1 gap-20 xl:grid-cols-3 lg:grid-cols-2 md:grid-cols-2 mt-8">
         <AnimatePresence>
           {/* <!-- cards to display projects --> */}
