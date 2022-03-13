@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Project(props) {
   return (
     <>
-      <div class="card w-96 glass card-normal bg-base-100 shadow-xl">
+      <div class="card glass card-normal bg-base-100 shadow-xl">
         <figure>
           <img src={props.image} alt={props.name} />
         </figure>
@@ -14,11 +14,7 @@ function Project(props) {
             <strong>Tech Used:</strong> {props.tech}
           </p>
           <div class="btn-group justify-end pt-2">
-            <a
-              class="btn btn-sm btn"
-              href={props.gitHubLink}
-              target="_blank"
-            >
+            <a class="btn btn-sm btn" href={props.gitHubLink} target="_blank">
               <Link to="{props.appLink}">Link</Link>GitHub Repo <FaGithubAlt />
             </a>
             <a
