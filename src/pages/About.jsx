@@ -43,10 +43,10 @@ function About() {
                 <dd className="mt-2 text-sm text-gray-700 dark:text-gray-400">
                   <ul>
                     <li>React</li>
-                    <li>Bootstrap</li>
+                    <li>HTML</li>
                     <li>CSS</li>
+                    <li>Bootstrap</li>
                     <li>Handlebars</li>
-                    <li>JQuery</li>
                     <li>WordPress</li>
                     <li>Shopify</li>
                     <br />
@@ -61,7 +61,7 @@ function About() {
                 <dd className="mt-2 text-sm text-gray-700 dark:text-gray-400">
                   <ul>
                     <li>Express</li>
-                    <li>Node-js</li>
+                    <li>Node.js</li>
                     <li>GraphQL</li>
                     <li>MySQL</li>
                     <li>Sequelize</li>
