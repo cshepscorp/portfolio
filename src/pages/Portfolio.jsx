@@ -7,10 +7,10 @@ function Portfolio() {
   const [projectsList] = useState(projects);
 
   return (
-    <div className="bg-white">
+    <div className="">
       <div className="mx-auto py-24 px-4 grid grid-cols-1 gap-y-8 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-1">
         <div>
-          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+          <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
             Portfolio
           </h2>
         </div>

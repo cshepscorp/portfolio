@@ -3,22 +3,26 @@ import { Link } from 'react-router-dom';
 function Project(props) {
   return (
     <>
-      <div class="card glass card-normal bg-base-100 shadow-xl">
+      <div className="card glass card-normal bg-base-300 dark:bg-base-100 shadow-xl">
         <figure>
           <img src={props.image} alt={props.name} />
         </figure>
-        <div class="card-body">
-          <h2 class="card-title">{props.name}</h2>
+        <div className="card-body dark:text-gray-200">
+          <h2 className="card-title">{props.name}</h2>
           <p>{props.description}</p>
           <p>
             <strong>Tech Used:</strong> {props.tech}
           </p>
-          <div class="btn-group justify-end pt-2">
-            <a class="btn btn-sm btn" href={props.gitHubLink} target="_blank">
-              <Link to="{props.appLink}">Link</Link>GitHub Repo <FaGithubAlt />
+          <div className="btn-group justify-end pt-2">
+            <a
+              className="btn btn-sm btn"
+              href={props.gitHubLink}
+              target="_blank"
+            >
+              <Link to="{props.appLink}" className="info">Link</Link>GitHub Repo <FaGithubAlt />
             </a>
             <a
-              class="btn btn-sm btn-active"
+              className="btn btn-sm btn-active"
               href={props.appLink}
               target="_blank"
             >

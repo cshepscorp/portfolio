@@ -1,10 +1,9 @@
-import { FaGithub } from 'react-icons/fa';
-
 function About() {
   return (
     // <!-- This example requires Tailwind CSS v2.0+ -->
     <>
-      <div className="bg-white">
+      {/* <div className="bg-white"> */}
+      <div className="">
         <div className="max-w-2xl mx-auto py-24 px-4 grid grid-cols-1 gap-y-16 gap-x-8 sm:px-6 sm:py-32 lg:max-w-7xl lg:px-8 lg:grid-cols-2">
           <div className="grid grid-cols-1 grid-rows-1 gap-4 sm:gap-6 lg:gap-8">
             <img
@@ -17,10 +16,10 @@ function About() {
       <img src="https://tailwindui.com/img/ecommerce-images/product-feature-03-detail-04.jpg" alt="Walnut card tray filled with cards and card angled in dedicated groove." class="bg-gray-100 rounded-lg"> */}
           </div>
           <div>
-            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
+            <h2 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white sm:text-4xl">
               Hi. I'm Christy!
             </h2>
-            <p className="mt-8 text-gray-500 z-50">
+            <p className="mt-8 text-gray-700 dark:text-gray-400 z-50">
               I am an aspiring Full Stack Web Developer utilizing over a decade
               of experience with Adobe Creative Suite and website management
               skills to craft and design attractive and intuitive user
@@ -33,13 +32,15 @@ function About() {
               tasked with a project I'm not 100% sure how to complete - I get
               excited - and then I get to work!
             </p>
-            <h3 className="mt-10 text-lg leading-3 font-bold text-gray-900 sm:text-4xl">
+            <h3 className="mt-10 text-lg leading-3 font-bold text-gray-900 dark:text-white sm:text-4xl">
               Technical Skills
             </h3>
             <dl className="mt-4 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Frontend Stuff</dt>
-                <dd className="mt-2 text-sm text-gray-500">
+                <dt className="font-bold text-gray-700 dark:text-gray-200">
+                  Frontend Stuff
+                </dt>
+                <dd className="mt-2 text-sm text-gray-700 dark:text-gray-400">
                   <ul>
                     <li>React</li>
                     <li>Bootstrap</li>
@@ -54,8 +55,10 @@ function About() {
               </div>
 
               <div className="border-t border-gray-200 pt-4">
-                <dt className="font-medium text-gray-900">Backend Stuff</dt>
-                <dd className="mt-2 text-sm text-gray-500">
+                <dt className="font-bold text-gray-700 dark:text-gray-200">
+                  Backend Stuff
+                </dt>
+                <dd className="mt-2 text-sm text-gray-700 dark:text-gray-400">
                   <ul>
                     <li>Express</li>
                     <li>Node-js</li>

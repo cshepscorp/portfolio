@@ -10,7 +10,7 @@
   color: #8f8f8f;
 }
 .navbarListItemNameActive {
-  color: yellow;
+  color: #f000b8;
 }
 
 .bottom-links {
@@ -19,7 +19,7 @@
 }
 
 .bottom-link {
-  color: rebeccapurple;
+  color: grey;
   padding: 0 10px;
 }
 
