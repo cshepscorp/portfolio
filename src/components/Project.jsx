@@ -19,7 +19,7 @@ function Project(props) {
               href={props.gitHubLink}
               target="_blank"
             >
-              <Link to="{props.appLink}" className="info">Link</Link>GitHub Repo <FaGithubAlt />
+              GitHub Repo <FaGithubAlt />
             </a>
             <a
               className="btn btn-sm btn-active"

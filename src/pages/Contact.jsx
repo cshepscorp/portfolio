@@ -22,7 +22,7 @@ function Contact() {
         </div>
         <div className="stats shadow contact">
           <div className="stat place-items-center">
-            <div className="stat-title">Resume</div>
+            <div className="stat-title dark:text-gray-100">Resume</div>
             <div className="stat-value text-secondary pt-2">
               <a href="https://github.com/cshepscorp/portfolio/blob/main/public/Resume-Christy%20Sheppard.pdf">
                 <FaDownload />
@@ -30,7 +30,7 @@ function Contact() {
             </div>
           </div>
           <div className="stat place-items-center">
-            <div className="stat-title">Github</div>
+            <div className="stat-title dark:text-gray-100">Github</div>
             <div className="stat-value text-secondary pt-2">
               <a href="https://github.com/cshepscorp" target="_blank">
                 <FaGithub />
@@ -38,7 +38,7 @@ function Contact() {
             </div>
           </div>
           <div className="stat place-items-center">
-            <div className="stat-title">LinkedIn</div>
+            <div className="stat-title dark:text-gray-100">LinkedIn</div>
             <div className="stat-value text-secondary pt-2">
               <a
                 href="https://www.linkedin.com/in/christinasheppard/"
@@ -49,7 +49,7 @@ function Contact() {
             </div>
           </div>
           <div className="stat place-items-center">
-            <div className="stat-title">Email</div>
+            <div className="stat-title dark:text-gray-100">Email</div>
             <div className="stat-value text-secondary pt-2">
               <a href="mailto:sheppard.christy@gmail.com">
                 <FaEnvelope />
@@ -57,7 +57,7 @@ function Contact() {
             </div>
           </div>
           <div className="stat place-items-center">
-            <div className="stat-title">Phone</div>
+            <div className="stat-title dark:text-gray-100">Phone</div>
             <div className="stat-value text-secondary pt-2">
               <a href="tel:18049281876">
                 <FaPhone />

@@ -17,7 +17,7 @@ My professional portfolio can be viewed here: https://portfolio-cshepscorp.verce
 
 ## About
 
-This is a portfolio built using React that showcases my abilities as a web developer and the projects I've created that demonstrate said abilities.
+This is a portfolio built using React that showcases my abilities as a web developer and the projects I've created during the course of a 6 month bootcamp.
 
 <a name="tech"></a>
 
@@ -27,6 +27,7 @@ This is a portfolio built using React that showcases my abilities as a web devel
 - React Router
 - Node.js
 - Express.js
+- Tailwind CSS and DaisyUI
 
 <a name="license"></a>
 
