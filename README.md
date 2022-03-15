@@ -1,6 +1,6 @@
 # React Professional Portfolio ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-![Screenshot of portfolio](public/images/readme-screenshot-react-portfolio.jpg)
+![Screenshot of portfolio](public/portfolio-screenshot.jpg)
 
 ### Deployed Link
 

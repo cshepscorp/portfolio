@@ -24,7 +24,7 @@ function Contact() {
           <div className="stat place-items-center">
             <div className="stat-title">Resume</div>
             <div className="stat-value text-secondary pt-2">
-              <a href="https://raw.githubusercontent.com/cshepscorp/react-portfolio/main/public/Resume-Christy-Sheppard.pdf">
+              <a href="https://github.com/cshepscorp/portfolio/blob/main/public/Resume-Christy%20Sheppard.pdf">
                 <FaDownload />
               </a>
             </div>
