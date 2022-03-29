@@ -24,7 +24,7 @@ function Contact() {
           <div className="stat place-items-center">
             <div className="stat-title dark:text-gray-100">Resume</div>
             <div className="stat-value text-secondary pt-2">
-              <a href="https://github.com/cshepscorp/portfolio/blob/main/public/christina-Sheppard_resume_March292022.pdf">
+              <a href="https://raw.githubusercontent.com/cshepscorp/portfolio/blob/main/public/christina-Sheppard_resume_March292022.pdf">
                 <FaDownload />
               </a>
             </div>
