@@ -20,16 +20,7 @@ function About() {
               Hi. I'm Christy!
             </h2>
             <p className="mt-8 text-gray-700 dark:text-gray-400 z-50">
-              I am an aspiring Full Stack Web Developer utilizing over a decade
-              of experience with Adobe Creative Suite and website management
-              skills to craft and design attractive and intuitive user
-              experiences on the web. I've been working in front-end web content
-              management (think WordPress, Shopify and other various CMS) and
-              basic HTML/CSS manipulation for many years. I recently decided I'd
-              like to get to know more about how things work behind the scenes
-              on a deeper level and enrolled and successfully completed a 6
-              month Full Stack Bootcamp at the University of Richmond. When I'm
-              tasked with a project I'm not 100% sure how to complete - I get
+              I am an aspiring Full Stack Web Developer utilizing over a decade of experience with Adobe Creative Suite and website management skills to craft and design attractive and intuitive user experiences on the web. I've been working in front-end web content management (think WordPress, Shopify and other various CMS) and basic HTML/CSS manipulation for many years. I recently decided I'd like to get to know more about how things work behind the scenes on a deeper level so I enrolled in and successfully completed a 6-month Full Stack Bootcamp at the University of Richmond. When I'm tasked with a project I'm not 100% sure how to complete - I get
               excited - and then I get to work!
             </p>
             <h3 className="mt-10 text-lg leading-3 font-bold text-gray-900 dark:text-white sm:text-4xl">
